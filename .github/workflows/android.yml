@@ -31,7 +31,7 @@ jobs:
           cache: 'gradle'
 
       - name: Build APK
-        run: chmod +x ./gradlew && ./gradlew assembleDebug
+        run: chmod +x ./gradlew && ./gradlew assembleRelease
 
       - name: Upload APK
         uses: actions/upload-artifact@v2
